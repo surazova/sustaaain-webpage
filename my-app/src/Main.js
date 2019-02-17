@@ -10,7 +10,7 @@ class Main extends Component {
           <li><a href="/About">About</a></li>
           <li><a href="/Content">Content</a></li>
         </ul>
-        <div className="content">
+        <div className="all">
         
         </div>
       </div>

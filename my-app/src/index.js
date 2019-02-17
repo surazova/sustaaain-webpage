@@ -7,5 +7,5 @@ import Main from "./Main";
 // Makes navigating look seamless
 ReactDOM.render(
   <Main/>,
-  document, getElementById("root")
+  document.getElementById("root")
 );
