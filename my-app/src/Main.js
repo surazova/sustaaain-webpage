@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+// imports from the NPM package: react-router-dom
 import {
   Route,
   NavLink,
@@ -7,6 +8,7 @@ import {
 }
 from "react-router-dom";
 
+// HashRouter componnet provides the foundation for the navigation and browser history handling that routing is made up of.
 import Home from "./Home";
 import About from "./About";
 import Content from "./Content";
@@ -14,6 +16,7 @@ import Content from "./Content";
 class Main extends Component {
   render() {
     return (
+      <HashRouter>
       <div>
         <h1>SUSTAAAIN.</h1>
         <ul className="header">
@@ -25,6 +28,7 @@ class Main extends Component {
         
         </div>
       </div>
+    </HashRouter>
     )
   }
 }
