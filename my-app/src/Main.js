@@ -2,9 +2,9 @@ import React, { Component } from "react";
 
 // imports from the NPM package: react-router-dom
 import {
+  BrowserRouter as Router,
   Route,
-  NavLink,
-  HashRouter
+  Link
 }
 from "react-router-dom";
 
@@ -16,19 +16,22 @@ import Content from "./Content";
 class Main extends Component {
   render() {
     return (
-      <HashRouter>
+      <Router>
       <div>
         <h1>SUSTAAAIN.</h1>
         <ul className="header">
-          <li><a href="/">Home</a></li>
-          <li><a href="/About">About</a></li>
-          <li><a href="/Content">Content</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/content">Content</a></li>
         </ul>
         <div className="all">
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" componet={About} />
+          <Route exact path="/content" componet={Content} />
         
         </div>
       </div>
-    </HashRouter>
+    </Router>
     )
   }
 }
